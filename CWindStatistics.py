@@ -57,11 +57,12 @@ These data were analyzed in detail in the following article:
 
 """
 
-
+import numpy as np
 """
 1. Use the <var> = np.loadtxt(<file>) to read the data into an array. Use <array>.shape to see the dimensions of the array with the data.
 """
-
+arr_wind_data = np.loadtxt('wind.data')
+print(arr_wind_data.shape)
 
 """
 2. As stated in the introduction, the first 3 columns of the data file are the dates. The remaining columns are the wind speed data. Use array slicing to create an array containing only the wind speed data. 
